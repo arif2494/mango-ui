@@ -6,7 +6,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    // "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
     "airbnb"
   ],
 
@@ -19,10 +19,11 @@
   },
   "plugins": ["react"],
   "rules": {
+    "object-curly-newline": 0,
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "comma-dangle": ["error", "never"],
-    "object-curly-newline": [
+    "comma-dangle": ["error", "never"]
+    /* "object-curly-newline": [
       "error",
       {
         "ObjectExpression": "always",
@@ -30,6 +31,6 @@
         "ImportDeclaration": "never",
         "ExportDeclaration": { "multiline": true, "minProperties": 3 }
       }
-    ]
+    ] */
   }
 }

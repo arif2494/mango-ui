@@ -12,9 +12,7 @@ function SubCard({ title, button, children, imgUrl, styling, icon }) {
           {icon && <div className="text-6xl flex justify-center my-5">{icon}</div>}
           <h1 className="my-5">{title}</h1>
           {children}
-          {
-          button && button
-          }
+          {button && button}
         </div>
       </Card>
     </div>

@@ -7,9 +7,7 @@ function GridCard({ xs, md, lg, children }) {
   const style = `grid grid-cols-${xs} md:grid-cols-${md} lg:grid-cols-${lg} gap-5`;
   return (
     <Card>
-      <div className={style}>
-        {children}
-      </div>
+      <div className={style}>{children}</div>
     </Card>
   );
 }

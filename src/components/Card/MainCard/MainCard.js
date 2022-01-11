@@ -1,31 +1,26 @@
 /* eslint-disable react/require-default-props */
 import PropTypes from 'prop-types';
 import React from 'react';
-import Card from '../style/card.styled';
+import Card from './card.styled';
 
-function MainCard({ title, button, children, imgUrl, styling, icon }) {
+function MainCard({ title, button, children }) {
   return (
-    <div className={styling}>
-      <Card>
-        {imgUrl && <img src={imgUrl} alt="" />}
-        <div className="p-5">
-          {icon && <div className="text-6xl flex justify-center my-5">{icon}</div>}
-          <h1>{title}</h1>
-          {children}
+    <Card className="border">
+      <div className="p-3">
+        <h1 className="my-5">{title}</h1>
+        {children}
+        <div>
           {
           button && button
-          }
+        }
         </div>
-      </Card>
-    </div>
+      </div>
+    </Card>
   );
 }
 MainCard.propTypes = {
   title: PropTypes.string,
   button: PropTypes.node,
-  children: PropTypes.node,
-  icon: PropTypes.node,
-  imgUrl: PropTypes.string,
-  styling: PropTypes.string
+  children: PropTypes.node
 };
 export default MainCard;

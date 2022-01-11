@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 const Card = styled.div`
-    ${tw`rounded-xl m-5 shadow-md hover:shadow-lg overflow-hidden`}
+    ${tw`rounded-xl md:m-5 m-3 shadow-md hover:shadow-lg overflow-hidden`}
     color:#696969;
     h1{
         color:#484848;
